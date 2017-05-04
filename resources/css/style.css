@@ -1,0 +1,279 @@
+
+html{
+  font-size: 18px;
+  border:0;
+  margin:0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+/*Container section*/
+.container{
+  max-width: 960px;
+  margin:auto;
+}
+
+/*Banner background image*/
+.banner{
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:31rem;
+  width: 100%;
+}
+
+/*logo section*/
+.logosection{
+  display: flex;
+  align-items: center;
+}
+
+header .logosection img{
+  height:1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+/*Header section*/
+header{
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.headerflex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Navigation section*/
+nav ul{
+  display:flex;
+  list-style: none;
+
+}
+
+nav ul li {
+  padding: 1rem 2rem;
+}
+
+#mobile-nav{
+  display: none;
+}
+
+.bannertext{
+  background-color: white;
+  color: black;
+  line-height: 1.2;
+  padding:  1.5rem 5rem;
+  text-align: center;
+  margin-right: -2rem;
+  margin-top: 10rem;
+}
+
+
+/*banner text section*/
+.bannertext h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*features section*/
+
+.featuregrp{
+  display: flex;
+  padding-top: 3rem;
+  justify-content: center;
+  flex-basis: auto;
+  margin-bottom: 3rem;
+}
+
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+  padding: 0 3rem;
+}
+
+.featureimg img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+#paper{
+  width:3.5rem;
+}
+
+.featuretext{
+  text-align: center;
+}
+
+/*General section */
+.general{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.subsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 5%;
+  width:35%;
+}
+
+.topic{
+   text-transform: uppercase;
+   font-size: 1rem;
+   font-weight: bold;
+   width: 10rem;
+   background-color: cadetblue;
+   margin-bottom: 1rem;
+   padding: 0.5rem 1.25rem;
+   color: white;
+}
+
+
+/*Footer section*/
+
+footer{
+  background-color: azure;
+  color: black;
+}
+footer .logosection img{
+  height:1.5rem;
+  padding-right: 1rem;
+}
+footer .logosection{
+  padding: 4rem;
+}
+
+
+/*Media Queries*/
+/*Tablet query*/
+@media only screen and (max-width:1024px){
+
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header{
+  margin-top: 0;
+}
+
+.banner{
+  height: 22rem;
+}
+
+.bannertext{
+  padding:  0.75rem 4rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+
+/*banner text section*/
+.bannertext h1{
+  font-size: 1.33rem;
+}
+
+}
+
+/*Mobile Query*/
+@media only screen and (max-width:700px){
+
+#desktop-nav{
+  display: none;
+}
+
+#mobile-nav{
+  display: flex;
+}
+
+.banner{
+  height: 17rem;
+  background-position: 20%; /* Not sure why this is put.Nothing mentioned on specs */
+}
+
+.bannertext{
+  padding:  1rem;
+  width: 100%;
+  margin-right: 0rem;
+  margin-top: 9rem;
+}
+
+.bannertext h1{
+  font-size: 1rem;
+}
+
+.featuregrp{
+  display:  flex;
+  flex-direction: column;
+  padding-top: 3.77rem;
+  margin-bottom: 3.77rem;
+  align-items: center;
+
+}
+.feature{
+  padding-top: 1.55rem;
+}
+
+.featuretext{
+  font-size: 0.77rem;
+}
+
+.general{
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.logosection span{
+  display: none;
+}
+.subsection{
+  padding-bottom: 4rem;
+}
+.subsection,.topic{
+
+  width:100%;
+}
+
+.topic{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.description{
+  font-size: 0.77rem;
+  padding-left: 1rem;
+}
+
+.logosection span{
+  display: none;
+}
+
+.logosection{
+  justify-content: center;
+}
+
+
+}
